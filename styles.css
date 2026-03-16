@@ -1,0 +1,45 @@
+:root{
+    --color-primary: #F16718;
+    --color-title: #162542;
+    --color-text: #5D6D8F;
+    --font-family: "Barlow", sans-serif;
+}
+
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+picture >img{
+    width: 10px;
+}
+/*Mobile*/
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.header_logo{
+    width: 40px;
+    height: 40px;
+}
+
+.header_preorder_anchor{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    color: var(--color-title);
+    font-weight: 700;
+}
+
+/*Introduction section*/
+
+.introduction_information{
+    padding: 0 2rem;
+}
