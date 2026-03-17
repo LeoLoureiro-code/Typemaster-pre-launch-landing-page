@@ -1,7 +1,8 @@
 :root{
     --color-primary: #F16718;
+    --color-secondary: #ffffff;
     --color-title: #162542;
-    --color-text: #5D6D8F;
+    --color-text: #52607e;
     --font-family: "Barlow", sans-serif;
 }
 
@@ -10,6 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
 }
 
 picture >img{
@@ -41,5 +46,46 @@ header{
 /*Introduction section*/
 
 .introduction_information{
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: clamp(2.9rem, 3vw, 3rem);
+    margin-bottom: 1.5rem;
+}
+
+.introduction_paragraph{
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.introduction_preorder_release_div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.introduction_preorder_anchor{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    height: 3.5rem;
+    width: 10.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.introduction_release_date{
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-weight: 700;
 }
