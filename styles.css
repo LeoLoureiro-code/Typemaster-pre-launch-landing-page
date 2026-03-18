@@ -11,15 +11,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body{
     font-family: var(--font-family);
 }
 
-picture >img{
-    width: 10px;
-}
 /*Mobile*/
 
 header{
@@ -27,7 +25,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
 }
 
 .header_logo{
@@ -42,6 +39,7 @@ header{
     color: var(--color-title);
     font-weight: 700;
 }
+
 
 /*Introduction section*/
 
@@ -67,6 +65,7 @@ h1{
     display: flex;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 5rem;
 }
 
 .introduction_preorder_anchor{
@@ -88,4 +87,39 @@ h1{
     color: var(--color-text);
     text-transform: uppercase;
     font-weight: 700;
+}
+
+
+.introduction_image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+/*information section*/
+
+.information_images_div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 23rem;
+    max-height: 12rem;
+}
+
+.information_phone_keyboard{
+    grid-column: 1/2;
+    overflow: hidden;
+}
+
+.information_phone_keyboard > img, .information_glass_keyboard > img{
+    width: 10px;
+    border-radius: 20px;
+}
+
+.information_glass_keyboard{
+    grid-column: 2/-1;
+    overflow: hidden;
 }
