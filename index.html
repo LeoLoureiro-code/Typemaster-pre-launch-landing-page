@@ -34,24 +34,24 @@
               Release on 5/27
             </p>
           </div>
-          <picture class="introduction_image">
-            <source srcset="assets/tablet/image-keyboard.jpg" type="image/jpg" media="(min-width: 768px)">
-            <source srcset="assets/desktop/image-keyboard.jpg" type="image/jpg" media="(min-width: 1440px)">
-            <img src="assets/mobile/image-keyboard.jpg" alt="a keyboard">
-          </picture>
         </div>
+        <picture class="introduction_image">
+          <source srcset="assets/tablet/image-keyboard.jpg" type="image/jpg" media="(min-width: 768px)">
+          <source srcset="assets/desktop/image-keyboard.jpg" type="image/jpg" media="(min-width: 1440px)">
+          <img src="assets/mobile/image-keyboard.jpg" alt="a keyboard">
+        </picture>
       </section>
       <section class="information_section">
         <div class="information_images_div">
-          <picture class="information_phone_keyboard">
+          <picture class="information_picture_phone_keyboard">
             <source srcset="assets/tablet/image-phone-and-keyboard.jpg" type="image/jpg" media="(min-width: 768px)">
             <source srcset="assets/desktop/image-phone-and-keyboard.jpg" type="image/jpg" media="(min-width: 1440px)">
-            <img src="assets/mobile/image-phone-and-keyboard.jpg" alt="A phone and a keyboard">
+            <img src="assets/mobile/image-phone-and-keyboard.jpg" class="information_phone_keyboard" alt="A phone and a keyboard">
           </picture>
-          <picture class="information_glass_keyboard">
+          <picture class="information_picture_glass_keyboard">
             <source srcset="assets/tablet/image-glass-and-keyboard.jpg" type="image/jpg" media="(min-width: 768px)">
             <source srcset="assets/desktop/image-glass-and-keyboard.jpg" type="image/jpg" media="(min-width: 1440px)">
-            <img src="assets/mobile/image-glass-and-keyboard.jpg" alt="A glass and a keyboard on a table">
+            <img src="assets/mobile/image-glass-and-keyboard.jpg" class="information_glass_keyboard" alt="A glass and a keyboard on a table">
           </picture>
         </div>
         <div class="information_info_div">
@@ -65,7 +65,9 @@
       <section class="features_section">
         <ul class="features_list">
           <li class="features_item">
-            <img src="" alt="" class="features_image">
+            <div class="feature_div">
+              <img src="assets/shared/icon-compatible.svg" alt="Laptop icon" class="features_image">
+            </div>
             <h3>Highly compatible</h3>
             <p class="features_paragraph">
               Easy to use and works well with all major computer brands, gaming consoles and mobile devices.
@@ -73,7 +75,9 @@
             </p>
           </li>
           <li class="features_item">
-            <img src="" alt="" class="features_image">
+            <div class="feature_div">
+              <img src="assets/shared/icon-bluetooth.svg" alt="Bluethoot icon" class="features_image">
+            </div>
             <h3>Wireless with bluetooth</h3>
             <p class="features_paragraph">
               Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away.
@@ -81,7 +85,9 @@
             </p>
           </li>
           <li class="features_item">
-            <img src="" alt="" class="features_image">
+            <div class="feature_div">
+              <img src="assets/shared/icon-battery.svg" alt="Battery icon" class="features_image">
+            </div>
             <h3>High capacity battery</h3>
             <p class="features_paragraph">
               Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
@@ -89,7 +95,9 @@
             </p>
           </li>
           <li class="features_item">
-            <img src="" alt="" class="features_image">
+             <div class="feature_div">
+              <img src="assets/shared/icon-light.svg" alt="Lightbulb icon" class="features_image">
+             </div>
             <h3>RGB backlit modes</h3>
             <p class="features_paragraph">
               Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the
