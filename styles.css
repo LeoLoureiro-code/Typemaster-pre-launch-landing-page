@@ -127,9 +127,20 @@ p{
     border-radius: 20px;
 }
 
-.information_picture_phone_keyboard{
-    grid-column: 1/2;
-    min-height: 12rem;
+.information_picture_phone_keyboard {
+  position: relative;
+  grid-column: 1/2;
+  min-height: 12rem;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.information_picture_phone_keyboard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #f16818b0;
+  z-index: 1;
 }
 
 .information_picture_glass_keyboard{
@@ -143,6 +154,7 @@ p{
     object-fit: cover;
     border-radius: 20px;
 }
+
 
 .information_glass_keyboard{
     width: 100%;
@@ -163,6 +175,12 @@ h2{
     margin-bottom: 1rem;
 }
 
+/*Features sections*/
+
+.features_section{
+    margin-bottom: 2rem;
+}
+
 .features_list{
     list-style: none;
 }
@@ -176,4 +194,21 @@ h2{
     width: 4rem;
     height: 4rem;
     margin-bottom: 2rem;
+}
+
+h3{
+    font-size: clamp(1.8rem, 3vw, 2rem);
+    padding-right: 8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
