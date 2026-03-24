@@ -52,6 +52,12 @@ header{
     font-family: var(--font-family);
     color: var(--color-title);
     font-weight: 700;
+    transition: 0.5s ease-out;
+}
+
+.header_preorder_anchor:hover{
+    background-color: var(--color-title);
+    color: var(--color-secondary);
 }
 
 
@@ -97,6 +103,12 @@ p{
     font-weight: 700;
     font-size: 1rem;
     border-radius: 10px;
+    transition: 0.5s ease-out;
+}
+
+.introduction_preorder_anchor:hover{
+    outline: 3px solid var(--color-primary);
+    outline-offset: 5px;
 }
 
 .introduction_release_date{
