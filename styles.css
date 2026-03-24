@@ -24,6 +24,11 @@ main{
     align-items: center;
 }
 
+.container{
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
 
 
 /*Mobile*/
@@ -293,5 +298,47 @@ footer{
     main{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+    }
+
+    section, footer{
+        grid-column: 1/-1;
+    }
+
+    section{
+        margin-bottom: 6rem !important;
+    }
+
+    .introduction_section{
+        justify-content: space-evenly;
+    }
+
+    .information_section{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        min-height: 30rem;
+    }
+
+    .information_images_div{
+        grid-column: 2/9;
+    }
+
+    .information_info_div{
+        grid-column: 9/-1;
+        flex-direction: column;
+    }
+    
+    .features_list{
+        flex-wrap: nowrap;
+    }
+
+    .features_item{
+        max-width: 16rem;
+        padding: 0 1rem;
+    }
+
+    h3{
+        font-size: 22px;
+        padding: 0;
+        margin: 2rem 0;
     }
 }
